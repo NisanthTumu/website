@@ -4687,3 +4687,55 @@ input, select, textarea {
 		}
 
 	}
+	.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.skill-card p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+.posts article {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts .actions {
+  margin-top: auto;
+}
+
+/* Center the Projects section header */
+#projects .major {
+  text-align: center;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+/* Optional: Make the Projects heading larger and more prominent */
+#projects .major h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* If the .posts class uses grid, ensure the header spans all columns */
+#projects > .major {
+  grid-column: 1 / -1;
+}
+
